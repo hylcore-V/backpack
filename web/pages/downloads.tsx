@@ -58,13 +58,13 @@ function _MobileSection() {
         alt="ios-icon"
         icon="/brands/ios.svg"
         title="App Store"
-        href="https://apps.apple.com/us/app/backpack-crypto-wallet/id6445964121"
+        href="https://apps.apple.com/us/app/Backpack-crypto-wallet/id6445964121"
       />
       <Panel
         alt="android-icon"
         icon="/brands/android.svg"
         title="Google Play"
-        href="https://play.google.com/store/apps/details?id=app.backpack.mobile"
+        href="https://play.google.com/store/apps/details?id=app.Backpack.mobile"
       />
       <AndroidAPKDownload />
     </div>
@@ -117,19 +117,19 @@ function _DesktopSection() {
         alt="chrome-icon"
         icon="/brands/chrome.svg"
         title="Chrome"
-        href="https://chrome.google.com/webstore/detail/backpack/aflkmfhebedbjioipglgcbcmnbpgliof"
+        href="https://chrome.google.com/webstore/detail/Backpack/aflkmfhebedbjioipglgcbcmnbpgliof"
       />
       <Panel
         alt="brave-icon"
         icon="/brands/brave.svg"
         title="Brave"
-        href="https://chrome.google.com/webstore/detail/backpack/aflkmfhebedbjioipglgcbcmnbpgliof"
+        href="https://chrome.google.com/webstore/detail/Backpack/aflkmfhebedbjioipglgcbcmnbpgliof"
       />
       <Panel
         alt="arc-icon"
         icon="/brands/arc.svg"
         title="Arc"
-        href="https://chrome.google.com/webstore/detail/backpack/aflkmfhebedbjioipglgcbcmnbpgliof"
+        href="https://chrome.google.com/webstore/detail/Backpack/aflkmfhebedbjioipglgcbcmnbpgliof"
       />
     </div>
   );

@@ -68,7 +68,7 @@ export class ProviderSolanaInjection
   //
   // Channel to send extension specific RPC requests to the extension.
   //
-  #backpackRequestManager: InjectedRequestManager;
+  #BackpackRequestManager: InjectedRequestManager;
 
   #requestManager: InjectedRequestManager | ChainedRequestManager;
 
@@ -87,12 +87,12 @@ export class ProviderSolanaInjection
       Object.freeze(this);
     }
     // this.#options = undefined;
-    this.#backpackRequestManager = new InjectedRequestManager(
+    this.#BackpackRequestManager = new InjectedRequestManager(
       CHANNEL_SOLANA_RPC_REQUEST,
       CHANNEL_SOLANA_RPC_RESPONSE
     );
 
-    this.#requestManager = this.#backpackRequestManager;
+    this.#requestManager = this.#BackpackRequestManager;
 
     this.#isBackpack = true;
     this.#isConnected = false;
@@ -294,8 +294,8 @@ export class ProviderSolanaInjection
     });
   }
 
-  async _backpackGetAccounts() {
-    return safeClientResponse(this.#secureSolanaClient.backpackGetAccounts());
+  async _BackpackGetAccounts() {
+    return safeClientResponse(this.#secureSolanaClient.BackpackGetAccounts());
   }
 
   async signIn(input?: SolanaSignInInput): Promise<SolanaSignInOutput> {

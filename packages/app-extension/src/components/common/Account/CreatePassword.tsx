@@ -70,7 +70,7 @@ export function CreatePassword({
         <StyledText color="$baseTextMedEmphasis" textAlign="center">
           {t("atleast_8_characters")}
           <br />
-          {t("unlock_backpack")}
+          {t("unlock_Backpack")}
         </StyledText>
       </YStack>
       <YStack f={1} gap={16}>

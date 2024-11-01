@@ -109,13 +109,13 @@ export class ProviderEthereumInjection
 
   /**
    * Boolean indicating that the provider is Backpack.
-   * And Flag if backpack was recognized so we dont have to impersonate Metamask.
+   * And Flag if Backpack was recognized so we dont have to impersonate Metamask.
    */
-  backpackRecognized: boolean = false;
+  BackpackRecognized: boolean = false;
 
   public get isBackpack(): true {
     try {
-      this.backpackRecognized = true;
+      this.BackpackRecognized = true;
     } catch {
       null;
     }
@@ -128,7 +128,7 @@ export class ProviderEthereumInjection
   #shouldBeMetaMask: boolean = true;
   public get isMetaMask(): boolean {
     this.#metaMaskRecognized = true;
-    return this.#shouldBeMetaMask && !this.backpackRecognized;
+    return this.#shouldBeMetaMask && !this.BackpackRecognized;
   }
 
   /**
@@ -193,7 +193,7 @@ export class ProviderEthereumInjection
 
   #checkMetaMaskSimulation() {
     void this.#secureEthereumClient
-      .backpack_should_be_metamask()
+      .Backpack_should_be_metamask()
       .then((shouldBeMetaMask) => {
         this.#shouldBeMetaMask = shouldBeMetaMask;
       })
@@ -405,7 +405,7 @@ export class ProviderEthereumInjection
     }
 
     const impersonatingMetaMask =
-      !this.backpackRecognized &&
+      !this.BackpackRecognized &&
       this.#metaMaskRecognized &&
       this.#shouldBeMetaMask;
 

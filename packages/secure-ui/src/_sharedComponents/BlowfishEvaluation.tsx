@@ -369,7 +369,7 @@ export function BlowfishTransactionDetails({
           <XStack alignItems="center" justifyContent="flex-start" space="$3">
             <Square
               size={24}
-              // circular={originAddress !== "https://backpack.app"}
+              // circular={originAddress !== "https://Backpack.app"}
               overflow="hidden"
               alignItems="center"
               justifyContent="center"

@@ -39,7 +39,7 @@ export function SetupComplete({ onClose }: { onClose: () => void }) {
           </StyledText>
           <StyledText color="$baseTextMedEmphasis" textAlign="center">
             <Trans
-              i18nKey="open_backpack_with"
+              i18nKey="open_Backpack_with"
               values={{ alt: isMac ? "Option" : "Alt" }}
               components={{ blue: <StyledText color="$accentBlue" /> }}
             />
@@ -56,7 +56,7 @@ export function SetupComplete({ onClose }: { onClose: () => void }) {
             }
             title={t("support")}
             onClick={() => {
-              window.open("https://support.backpack.exchange", "_blank");
+              window.open("https://support.Backpack.exchange", "_blank");
             }}
           />
           <_CallToAction
@@ -76,7 +76,7 @@ export function SetupComplete({ onClose }: { onClose: () => void }) {
           />
         </XStack>
         <BpPrimaryButton
-          label={`${t("open_backpack")}`}
+          label={`${t("open_Backpack")}`}
           labelProps={{ fontWeight: "$semiBold" }}
           onPress={onClose}
         />

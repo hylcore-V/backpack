@@ -43,7 +43,7 @@ const articles = [
       'Backpack Launches First Solana xNFT Collection, Breaking Records and Showcasing an Opportunity for NFTs to Be More Than JPEGs and Reach a Mass Consumer Audience',
     image:
       'https://www.coindesk.com/resizer/aHFTwpGDGmuTTf1AC6ueAsmJv1w=/2112x1188/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/FB4VEP3MIBCLNHHOHFWHRHCP2A.jpg',
-    href: 'https://www.prnewswire.com/news-releases/backpack-launches-first-solana-xnft-collection-breaking-records-and-showcasing-an-opportunity-for-nfts-to-be-more-than-jpegs-and-reach-a-mass-consumer-audience-301807194.html'
+    href: 'https://www.prnewswire.com/news-releases/Backpack-launches-first-solana-xnft-collection-breaking-records-and-showcasing-an-opportunity-for-nfts-to-be-more-than-jpegs-and-reach-a-mass-consumer-audience-301807194.html'
   }
 ];
 

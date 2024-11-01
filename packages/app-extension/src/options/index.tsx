@@ -48,7 +48,7 @@ const secureUITransportSender = new FromExtensionTransportSender<SECURE_EVENTS>(
   {
     origin: {
       name: "Backpack Extension",
-      address: "https://backpack.app",
+      address: "https://Backpack.app",
       context: "secureUI",
     },
   }

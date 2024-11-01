@@ -109,7 +109,7 @@ export function AddWalletMenu({ blockchain }: { blockchain: Blockchain }) {
               icon={
                 <BackpackMnemonicIcon style={{}} fill={theme.baseIcon.val} />
               }
-              title={t("backpack_recovery_phrase")}
+              title={t("Backpack_recovery_phrase")}
               onClick={() =>
                 navigation.push(Routes.WalletAddBackpackRecoveryPhraseScreen, {
                   blockchain,

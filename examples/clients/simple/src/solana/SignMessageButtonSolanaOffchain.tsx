@@ -13,7 +13,7 @@ export const SignMessageButtonSolanaOffchain: FC = () => {
     const msg = anchor.utils.bytes.utf8.encode("hello world ñ");
     console.log("requesting sig over", msg);
 
-    const preparedMessage = await window.backpack?.prepareSolanaOffchainMessage(
+    const preparedMessage = await window.Backpack?.prepareSolanaOffchainMessage(
       msg
     );
     const signature = await wallet.signMessage!(preparedMessage);

@@ -13,7 +13,7 @@ export const SignMessageButtonSolanaOffchainASCII: FC = () => {
     const msg = anchor.utils.bytes.utf8.encode("hello world");
     console.log("requesting sig over", msg);
 
-    const preparedMessage = await window.backpack?.prepareSolanaOffchainMessage(
+    const preparedMessage = await window.Backpack?.prepareSolanaOffchainMessage(
       msg,
       "ASCII"
     );

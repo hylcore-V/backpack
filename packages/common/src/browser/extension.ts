@@ -253,7 +253,7 @@ export function resizeExtensionWindow(options?: {
   extensionWindow.document.body.style.minHeight = "unset";
   extensionWindow.document.body.style.minWidth = "unset";
 
-  //this is an element created by backpack,
+  //this is an element created by Backpack,
   //whose minHeight value is preventing the set height to work
   const rootElement = extensionWindow.document.getElementById("root");
   if (rootElement) {

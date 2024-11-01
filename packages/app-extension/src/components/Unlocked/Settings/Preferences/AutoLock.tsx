@@ -57,7 +57,7 @@ export function PreferencesAutoLock() {
 
   const options = [
     // { id: "never", text: t("never") },
-    // { id: "onClose", text: t("every_time_close_backpack") },
+    // { id: "onClose", text: t("every_time_close_Backpack") },
   ] as { id: typeof settings.option; text: string }[];
 
   return (

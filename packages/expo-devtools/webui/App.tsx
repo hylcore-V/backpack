@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Pressable, StyleSheet, Text, View, FlatList } from "react-native";
 
 export default function App() {
-  const client = useDevToolsPluginClient("backpack-devtools");
+  const client = useDevToolsPluginClient("Backpack-devtools");
   const [logs, setLogs] = useState([]);
 
   const createLogItem = (message, type) => {

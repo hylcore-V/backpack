@@ -521,7 +521,7 @@ export function SettingsNavigator({
         component={AboutScreen}
         options={({ navigation }) => {
           return {
-            title: t("about_backpack"),
+            title: t("about_Backpack"),
             ...maybeCloseButton(false, navigation),
           };
         }}

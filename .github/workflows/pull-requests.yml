@@ -104,7 +104,7 @@ jobs:
               # If counterpart exists in git but not in the diff output, then proceed
               if git ls-files "$counterpart" --error-unmatch > /dev/null 2>&1; then
                 echo "counterparts=true" >> "$GITHUB_OUTPUT"
-                echo "* [$file](https://github.com/coral-xyz/backpack-private/blob/master/$file) but not [$(basename "$counterpart")](https://github.com/coral-xyz/backpack-private/blob/master/$counterpart)" >> counterparts.txt
+                echo "* [$file](https://github.com/coral-xyz/Backpack-private/blob/master/$file) but not [$(basename "$counterpart")](https://github.com/coral-xyz/Backpack-private/blob/master/$counterpart)" >> counterparts.txt
               fi
             fi
           done

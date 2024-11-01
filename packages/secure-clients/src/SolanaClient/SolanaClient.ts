@@ -126,7 +126,7 @@ export class SolanaClient extends BlockchainClientBase<Blockchain.SOLANA> {
     return blockhash;
   }
 
-  public async backpackGetAccounts() {
+  public async BackpackGetAccounts() {
     return this.secureUserClient.getAllUsersWithAccounts();
   }
 

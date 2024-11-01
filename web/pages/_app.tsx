@@ -15,13 +15,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image"
-          content="https://www.backpack.app/_next/image?url=%2Fbrands%2Fbackpack-twitter.png&w=3840&q=75"
+          content="https://www.Backpack.app/_next/image?url=%2Fbrands%2FBackpack-twitter.png&w=3840&q=75"
         />
         <meta name="apple-itunes-app" content="app-id=6445964121" />
         <title>Backpack</title>
       </Head>
 
-      <PlausibleProvider domain="backpack.app" trackOutboundLinks={true}>
+      <PlausibleProvider domain="Backpack.app" trackOutboundLinks={true}>
         <div className="bg-zinc-900">
           <div
             className="justify-betwee mx-auto flex min-h-screen

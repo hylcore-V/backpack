@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { useMemo } from "react";
-import { BackpackWalletAdapter } from "@solana/wallet-adapter-backpack";
+import { BackpackWalletAdapter } from "@solana/wallet-adapter-Backpack";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { PhantomWalletAdapter } from "@solana/wallet-adapter-phantom";
 import {

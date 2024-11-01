@@ -113,7 +113,7 @@ export class Backend {
       try {
         const resp = await fetch(
           "https://api.app-store.xnfts.dev/api/curation/whitelist",
-          { headers: { "X-Requested-With": "app.backpack.background" } }
+          { headers: { "X-Requested-With": "app.Backpack.background" } }
         );
         const { whitelist } = await resp.json();
         resolve(whitelist);
@@ -712,7 +712,7 @@ export class Backend {
         // Secondary lazy check to ensure there wasn't a whitelist update in-between cache updates
         const resp = await fetch(
           `https://api.app-store.xnfts.dev/api/curation/whitelist/check?address=${pk}`,
-          { headers: { "X-Requested-With": "app.backpack.background" } }
+          { headers: { "X-Requested-With": "app.Backpack.background" } }
         );
         const { whitelisted } = await resp.json();
 

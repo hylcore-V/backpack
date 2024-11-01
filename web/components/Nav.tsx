@@ -12,7 +12,7 @@ function classNames(...classes: any) {
 export const mainMenu = [
   {
     title: 'Exchange',
-    path: 'https://backpack.exchange'
+    path: 'https://Backpack.exchange'
   },
   {
     title: 'Downloads',
@@ -34,7 +34,7 @@ function Nav() {
                   {/* Logo */}
                   <Link href="/">
                     <div className="flex">
-                      <Image alt="Backpack" src="/backpack.svg" width={150} height={50} />
+                      <Image alt="Backpack" src="/Backpack.svg" width={150} height={50} />
                     </div>
                   </Link>
                 </div>
@@ -65,8 +65,8 @@ function Nav() {
                           </Menu.Button>
                           <Menu.Items className="absolute left-0 mt-2 rounded-lg bg-[#27272A] px-3 text-sm font-medium tracking-wide text-zinc-100">
                             {[
-                              { title: 'Discord', link: 'http://discord.gg/backpack' },
-                              { title: 'User Guides', link: 'https://help.backpack.app' }
+                              { title: 'Discord', link: 'http://discord.gg/Backpack' },
+                              { title: 'User Guides', link: 'https://help.Backpack.app' }
                             ].map(item => (
                               <Menu.Item key={item.title}>
                                 <div className="w-24 py-2">

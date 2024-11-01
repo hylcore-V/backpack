@@ -104,7 +104,7 @@ function Hero() {
                 poster="/screenshot.png"
                 className="rounded-xl  shadow-xl shadow-teal-600/30"
               >
-                <source src="/videos/backpack-safari.mp4" type="video/mp4" />
+                <source src="/videos/Backpack-safari.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
