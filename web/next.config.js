@@ -33,12 +33,12 @@ const moduleExports = withPlausibleProxy()({
       {
         source: '/download',
         destination:
-          'https://chrome.google.com/webstore/detail/backpack/aflkmfhebedbjioipglgcbcmnbpgliof',
+          'https://chrome.google.com/webstore/detail/Backpack/aflkmfhebedbjioipglgcbcmnbpgliof',
         permanent: true
       },
       {
         source: '/ref/:username',
-        destination: 'https://backpack-api.xnfts.dev/referrals/:username',
+        destination: 'https://Backpack-api.xnfts.dev/referrals/:username',
         permanent: true
       },
       {

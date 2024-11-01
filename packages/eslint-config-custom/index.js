@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   extends: [
-    "./shared/backpack.js",
+    "./shared/Backpack.js",
     "./shared/react.js",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -15,10 +15,10 @@ module.exports = {
     "@typescript-eslint",
     "simple-import-sort",
     "mui-custom",
-    "backpack",
+    "Backpack",
   ],
   rules: {
-    "backpack/i18n-keys": "error",
+    "Backpack/i18n-keys": "error",
     "mui-custom/unused-styles": "warn",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-types": "off",

@@ -1,4 +1,4 @@
-# @solana/wallet-standard-backpack
+# @solana/wallet-standard-Backpack
 
 ## 0.1.0
 

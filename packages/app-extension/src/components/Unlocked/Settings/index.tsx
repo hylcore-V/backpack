@@ -129,7 +129,7 @@ function SettingsList() {
 
   const aboutList = [
     {
-      label: t("about_backpack"),
+      label: t("about_Backpack"),
       onClick: () => navigation.push(Routes.AboutScreen),
       icon: null,
       detailIcon: <PushDetail />,

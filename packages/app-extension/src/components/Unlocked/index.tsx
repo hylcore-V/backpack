@@ -41,7 +41,7 @@ function Bootstrap() {
 function WithApollo({ children }: { children: any }) {
   const headers = useApolloClientHeaders();
   const apolloClient = createApolloClient(
-    "backpack-extension",
+    "Backpack-extension",
     BACKPACK_CONFIG_VERSION,
     headers
   );

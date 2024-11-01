@@ -24,7 +24,7 @@ export const SendAllButton: FC = () => {
     // Test the pass through connection works.
     //
     // @ts-ignore
-    const bh = await window.backpack.connection.getLatestBlockhash();
+    const bh = await window.Backpack.connection.getLatestBlockhash();
     console.log("got latest blockhash", bh);
 
     const toAccount = "AqP1ABfSsRUBcgY3bwiDRB4kiBxgESUqCdcdDLMVSrWS";
@@ -65,7 +65,7 @@ export const SendAllButton: FC = () => {
     console.log("sending transactions", transaction1, transaction2);
 
     // @ts-ignore
-    const { blockhash } = await window.backpack.connection.getLatestBlockhash();
+    const { blockhash } = await window.Backpack.connection.getLatestBlockhash();
     transaction1.recentBlockhash = blockhash;
     transaction2.recentBlockhash = blockhash;
     transaction3.recentBlockhash = blockhash;

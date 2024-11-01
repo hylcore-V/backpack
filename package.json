@@ -1,5 +1,5 @@
 {
-  "name": "backpack",
+  "name": "Backpack",
   "packageManager": "yarn@4.0.2",
   "private": true,
   "workspaces": {

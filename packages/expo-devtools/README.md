@@ -1,11 +1,11 @@
-# backpack-devtools
+# Backpack-devtools
 
 Backpack devtools
 
 # API documentation
 
-- [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/backpack-devtools.md)
-- [Documentation for the latest stable release](https://docs.expo.dev/versions/latest/sdk/backpack-devtools/)
+- [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/Backpack-devtools.md)
+- [Documentation for the latest stable release](https://docs.expo.dev/versions/latest/sdk/Backpack-devtools/)
 
 # Installation in managed Expo projects
 
@@ -18,7 +18,7 @@ For bare React Native projects, you must ensure that you have [installed and con
 ### Add the package to your npm dependencies
 
 ```
-npm install backpack-devtools
+npm install Backpack-devtools
 ```
 
 

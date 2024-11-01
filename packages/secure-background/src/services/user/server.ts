@@ -696,13 +696,13 @@ export class UserService {
     async ({ respond, error, event }) => {
       const origin = event.origin;
       const originUrl = new URL(event.origin.address).host;
-      // only allow this method to be used by backpack.exchange externally
+      // only allow this method to be used by Backpack.exchange externally
       if (
         ["browser", "xnft"].includes(origin.context) &&
         !originUrl.startsWith("localhost:") &&
         !(
-          originUrl.endsWith(".backpack.exchange") ||
-          originUrl === "backpack.exchange"
+          originUrl.endsWith(".Backpack.exchange") ||
+          originUrl === "Backpack.exchange"
         ) &&
         !(originUrl.endsWith(".treklabs.xyz") || originUrl === "treklabs.xyz")
       ) {

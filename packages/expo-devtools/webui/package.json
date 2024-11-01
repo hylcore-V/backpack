@@ -1,5 +1,5 @@
 {
-  "name": "backpack-devtools-webui",
+  "name": "Backpack-devtools-webui",
   "version": "0.0.1-private",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {

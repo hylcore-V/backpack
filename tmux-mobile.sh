@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a new tmux session
-tmux new-session -d -s backpack
+tmux new-session -d -s Backpack
 tmux rename-window 'terminal'
 
 # Split the window vertically
@@ -18,7 +18,7 @@ tmux send-keys "yarn start:mobile" C-m
 tmux new-window -n 'workspace'
 tmux select-window -t1 \; select-pane -t1 \; send-keys "tmux resize-pane -t1 -y 70" Enter
 
-tmux attach-session -t backpack
+tmux attach-session -t Backpack
 
 # ----------------------------
 # 90% viewport
@@ -26,6 +26,6 @@ tmux attach-session -t backpack
 #
 # ----------------------------
 # 10% viewport |
-# app-mobile   | backpack root
+# app-mobile   | Backpack root
 # yarn ios     | yarn start:mobile
 #              |

@@ -3,7 +3,7 @@ import { DefaultTheme } from "@react-navigation/native";
 
 export function useNavigationContainerTheme() {
   const baseTheme = useTheme();
-  const backpackTheme = {
+  const BackpackTheme = {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
@@ -13,5 +13,5 @@ export function useNavigationContainerTheme() {
       card: baseTheme.baseBackgroundL0.val,
     },
   };
-  return backpackTheme;
+  return BackpackTheme;
 }

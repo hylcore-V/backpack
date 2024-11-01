@@ -71,7 +71,7 @@ export const OnboardAccount = ({
         nextStep();
       }}
     />,
-    ...(action === "recover_backpack_backup"
+    ...(action === "recover_Backpack_backup"
       ? [
         <BackupInput
           key="BackupRecovery"
@@ -174,7 +174,7 @@ export const OnboardAccount = ({
             : []),
         ]
       : []),
-    ...(!isAddingAccount && action !== "recover_backpack_backup"
+    ...(!isAddingAccount && action !== "recover_Backpack_backup"
       ? [
         <CreatePassword
           key="CreatePassword"

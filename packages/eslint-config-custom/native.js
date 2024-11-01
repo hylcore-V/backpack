@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ["@peterpme/react-native", "backpack", "react", "react-hooks"],
+  plugins: ["@peterpme/react-native", "Backpack", "react", "react-hooks"],
   extends: [
-    "./shared/backpack.js",
+    "./shared/Backpack.js",
     "turbo",
     "universe",
     "plugin:react/recommended",
@@ -31,8 +31,8 @@ module.exports = {
      * =======================================
      */
 
-    "backpack/hooks-should-not-start-with-underscore": "error",
-    "backpack/i18n-keys": "error",
+    "Backpack/hooks-should-not-start-with-underscore": "error",
+    "Backpack/i18n-keys": "error",
     "react/react-in-jsx-scope": "off",
     "no-unreachable": "error",
     "no-empty-pattern": "error",
@@ -60,7 +60,7 @@ module.exports = {
         message: "Units like px, vh, etc don't work. Use unitless instead",
       },
       {
-        selector: "Literal[value=/(treklabs.xyz|backpack.exchange)/]",
+        selector: "Literal[value=/(treklabs.xyz|Backpack.exchange)/]",
         message: "Use Constants.expoConfig?.extra?.exchange{Api,Base}Url",
       },
     ],

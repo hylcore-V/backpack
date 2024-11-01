@@ -176,7 +176,7 @@ export class EthereumClient extends BlockchainClientBase<Blockchain.ETHEREUM> {
     return this.provider;
   }
 
-  public async backpack_should_be_metamask(): Promise<boolean> {
+  public async Backpack_should_be_metamask(): Promise<boolean> {
     const response = await this.secureEvmClient.should_be_metamask();
     return !response.response?.doNotImpersonateMetaMask;
   }

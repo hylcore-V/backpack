@@ -131,7 +131,7 @@ function QrCode({
         ...style,
       }}
     >
-      <img src={`https://qr.backpack.workers.dev/qz=0?${data}`} alt={data} />
+      <img src={`https://qr.Backpack.workers.dev/qz=0?${data}`} alt={data} />
     </div>
   );
 }

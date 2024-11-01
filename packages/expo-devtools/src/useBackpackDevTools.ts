@@ -6,7 +6,7 @@ const originalConsoleWarn = console.warn;
 const originalConsoleError = console.error;
 
 export function useBackpackDevTools() {
-  const client = useDevToolsPluginClient("backpack-devtools");
+  const client = useDevToolsPluginClient("Backpack-devtools");
 
   useEffect(() => {
     const subscriptions: EventSubscription[] = [];

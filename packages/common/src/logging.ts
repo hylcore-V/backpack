@@ -15,9 +15,9 @@ export function getLogger(mod: string) {
         : "";
     return {
       debug: (str: string, ...args: any) =>
-        debug(`backpack:${prefix} ${_mod}: ${str}`, ...args),
+        debug(`Backpack:${prefix} ${_mod}: ${str}`, ...args),
       error: (str: string, ...args: any) =>
-        error(`backpack:${prefix} ${_mod}: ${str}`, ...args),
+        error(`Backpack:${prefix} ${_mod}: ${str}`, ...args),
       _log,
     };
   })();
@@ -110,7 +110,7 @@ export function setupLogLevel() {
 
 // Used for logflare.app debugging
 export async function logflareDebug(msg: string, data?: object): Promise<void> {
-  // app.backpack.mobile source id
+  // app.Backpack.mobile source id
   const sourceId = "13f2dddf-4ad3-446f-8ebe-f16b4415483c";
   const apiKey = "g2jE0-ajd9Kf";
   const url = `https://api.logflare.app/api/logs?source=${sourceId}`;

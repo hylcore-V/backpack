@@ -39,11 +39,11 @@ import { isSolanaChain, isVersionedTransaction, SOLANA_CHAINS } from './solana.j
 import { bytesEqual } from './util.js';
 import type { Backpack } from './window.js';
 
-export const BackpackNamespace = 'backpack:';
+export const BackpackNamespace = 'Backpack:';
 
 export type BackpackFeature = {
     [BackpackNamespace]: {
-        backpack: Backpack;
+        Backpack: Backpack;
     };
 };
 
@@ -53,7 +53,7 @@ export class BackpackWallet implements Wallet {
     readonly #name = 'Backpack' as const;
     readonly #icon = icon;
     #account: BackpackWalletAccount | null = null;
-    readonly #backpack: Backpack;
+    readonly #Backpack: Backpack;
 
     get version() {
         return this.#version;
@@ -111,7 +111,7 @@ export class BackpackWallet implements Wallet {
                 signIn: this.#signIn,
             },
             [BackpackNamespace]: {
-                backpack: this.#backpack,
+                Backpack: this.#Backpack,
             },
         };
     }
@@ -120,16 +120,16 @@ export class BackpackWallet implements Wallet {
         return this.#account ? [this.#account] : [];
     }
 
-    constructor(backpack: Backpack) {
+    constructor(Backpack: Backpack) {
         if (new.target === BackpackWallet) {
             Object.freeze(this);
         }
 
-        this.#backpack = backpack;
+        this.#Backpack = Backpack;
 
-        backpack.on('connect', this.#connected, this);
-        backpack.on('disconnect', this.#disconnected, this);
-        backpack.on('accountChanged', this.#reconnected, this);
+        Backpack.on('connect', this.#connected, this);
+        Backpack.on('disconnect', this.#disconnected, this);
+        Backpack.on('accountChanged', this.#reconnected, this);
 
         this.#connected();
     }
@@ -149,10 +149,10 @@ export class BackpackWallet implements Wallet {
     }
 
     #connected = () => {
-        const address = this.#backpack.publicKey?.toBase58();
+        const address = this.#Backpack.publicKey?.toBase58();
         if (address) {
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            const publicKey = this.#backpack.publicKey!.toBytes();
+            const publicKey = this.#Backpack.publicKey!.toBytes();
 
             const account = this.#account;
             if (!account || account.address !== address || !bytesEqual(account.publicKey, publicKey)) {
@@ -170,7 +170,7 @@ export class BackpackWallet implements Wallet {
     };
 
     #reconnected = () => {
-        if (this.#backpack.publicKey) {
+        if (this.#Backpack.publicKey) {
             this.#connected();
         } else {
             this.#disconnected();
@@ -179,7 +179,7 @@ export class BackpackWallet implements Wallet {
 
     #connect: StandardConnectMethod = async ({ silent } = {}) => {
         if (!this.#account) {
-            await this.#backpack.connect(silent ? { onlyIfTrusted: true } : undefined);
+            await this.#Backpack.connect(silent ? { onlyIfTrusted: true } : undefined);
         }
 
         this.#connected();
@@ -188,7 +188,7 @@ export class BackpackWallet implements Wallet {
     };
 
     #disconnect: StandardDisconnectMethod = async () => {
-        await this.#backpack.disconnect();
+        await this.#Backpack.disconnect();
     };
 
     #signAndSendTransaction: SolanaSignAndSendTransactionMethod = async (...inputs) => {
@@ -203,7 +203,7 @@ export class BackpackWallet implements Wallet {
             if (account !== this.#account) throw new Error('invalid account');
             if (!isSolanaChain(chain)) throw new Error('invalid chain');
 
-            const { signature } = await this.#backpack.signAndSendTransaction(
+            const { signature } = await this.#Backpack.signAndSendTransaction(
                 VersionedTransaction.deserialize(transaction),
                 {
                     preflightCommitment,
@@ -234,7 +234,7 @@ export class BackpackWallet implements Wallet {
             if (account !== this.#account) throw new Error('invalid account');
             if (chain && !isSolanaChain(chain)) throw new Error('invalid chain');
 
-            const signedTransaction = await this.#backpack.signTransaction(VersionedTransaction.deserialize(transaction));
+            const signedTransaction = await this.#Backpack.signTransaction(VersionedTransaction.deserialize(transaction));
 
             const serializedTransaction = isVersionedTransaction(signedTransaction)
                 ? signedTransaction.serialize()
@@ -262,7 +262,7 @@ export class BackpackWallet implements Wallet {
 
             const transactions = inputs.map(({ transaction }) => VersionedTransaction.deserialize(transaction));
 
-            const signedTransactions = await this.#backpack.signAllTransactions(transactions);
+            const signedTransactions = await this.#Backpack.signAllTransactions(transactions);
 
             outputs.push(
                 ...signedTransactions.map((signedTransaction) => {
@@ -293,7 +293,7 @@ export class BackpackWallet implements Wallet {
             const { message, account } = inputs[0]!;
             if (account !== this.#account) throw new Error('invalid account');
 
-            const { signature } = await this.#backpack.signMessage(message);
+            const { signature } = await this.#Backpack.signMessage(message);
 
             outputs.push({ signedMessage: message, signature });
         } else if (inputs.length > 1) {
@@ -310,10 +310,10 @@ export class BackpackWallet implements Wallet {
 
         if (inputs.length > 1) {
             for (const input of inputs) {
-                outputs.push(await this.#backpack.signIn(input));
+                outputs.push(await this.#Backpack.signIn(input));
             }
         } else {
-            return [await this.#backpack.signIn(inputs[0])];
+            return [await this.#Backpack.signIn(inputs[0])];
         }
 
         return outputs;

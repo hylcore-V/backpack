@@ -77,7 +77,7 @@ function isWebInjectedProvider(): boolean {
     return false;
   }
 
-  if (!globalThis._backpack_injected_provider) {
+  if (!globalThis._Backpack_injected_provider) {
     return false;
   }
 

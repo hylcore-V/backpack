@@ -77,7 +77,7 @@ export type OnboardData = KeyringData & BaseData;
 export type OnboardingData = {
   accountName?: string;
   complete: boolean;
-  action: "create" | "import" | "recover_backpack_backup";
+  action: "create" | "import" | "recover_Backpack_backup";
   keyringType: KeyringType | null;
   blockchain: Blockchain | null;
   password: string | null;

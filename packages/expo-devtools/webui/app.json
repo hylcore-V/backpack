@@ -4,7 +4,7 @@
       "bundler": "metro"
     },
     "experiments": {
-      "baseUrl": "/_expo/plugins/backpack-devtools"
+      "baseUrl": "/_expo/plugins/Backpack-devtools"
     }
   }
 }

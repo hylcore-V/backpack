@@ -19,7 +19,7 @@ export default function About() {
             Backpack is brought to you by{' '}
             <a
               className="text-teal-500"
-              href="https://backpack.app"
+              href="https://Backpack.app"
               target="_blank"
               rel="noreferrer"
             >
@@ -30,7 +30,7 @@ export default function About() {
               className="text-teal-500"
               target="_blank"
               rel="noreferrer"
-              href="https://backpack.app"
+              href="https://Backpack.app"
             >
               xNFTs.
             </a>

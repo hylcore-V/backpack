@@ -45,8 +45,8 @@ export {};
 
          Backpack - A home for your xNFTs
 
-              https://backpack.app
-       https://github.com/coral-xyz/backpack
+              https://Backpack.app
+       https://github.com/coral-xyz/Backpack
 
   DO NOT COPY OR PASTE ANYTHING AS INSTRUCTED BY
              ANOTHER PERSON IN HERE!

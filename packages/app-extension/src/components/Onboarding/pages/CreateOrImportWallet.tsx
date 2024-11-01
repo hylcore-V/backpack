@@ -20,7 +20,7 @@ export const CreateOrImportWallet = ({
       </div>
       <YStack gap={8}>
         <StyledText fontSize={36} fontWeight="$semiBold" textAlign="center">
-          {t("welcome_to_backpack")}
+          {t("welcome_to_Backpack")}
         </StyledText>
         <StyledText color="$baseTextMedEmphasis" textAlign="center">
           {t("lets_get_started")}

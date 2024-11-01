@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 declare global {
   interface Window {
-    backpack?: { isBackpack?: boolean };
+    Backpack?: { isBackpack?: boolean };
   }
 }
 
@@ -13,7 +13,7 @@ export default function Browse() {
   useEffect(() => {
     let timer;
 
-    if (window.backpack?.isBackpack) {
+    if (window.Backpack?.isBackpack) {
       // Backpack is installed, redirect user to the destination URL
       try {
         const [, , escapedUrl] = router.asPath.match(/\/ul(\/v1)?\/browse\/([^?]+)/);

@@ -32,7 +32,7 @@ export const Finish = ({ isAddingAccount }: { isAddingAccount?: boolean }) => {
   return !loading ? (
     <SetupComplete
       onClose={() => {
-        window.open("https://backpack.exchange", "_blank");
+        window.open("https://Backpack.exchange", "_blank");
         openPopupWindow("popup.html");
       }}
     />
